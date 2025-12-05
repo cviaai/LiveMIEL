@@ -61,10 +61,10 @@ The segmentation pipeline is highly configurable to adapt to different image qua
 
 | Parameter | Description | Typical Range (60x, 1360x1024 px) |
 | :--- | :--- | :--- |
-| **`lowSigm`** | Std. dev. of the `small_gaussian_kernel`. Smoothes noise and defines object detail. Lower values preserve more detail; higher values smooth outlines. | `[5, 15]` |
-| **`highSigm`** | Std. dev. of the `big_gaussian_kernel`. Removes background. Lower values remove more background fragments. | `[20, 70]` |
+| **`lowSigm`** | Std. dev. of the `small_gaussian_kernel`. Smoothes noise and defines object detail. Lower values preserve more detail; higher values smooth outlines. <br><br> <img src="./figures/lowSigm.png" style="width:350px; height:auto;">  | `[5, 15]` |
+| **`highSigm`** | Std. dev. of the `big_gaussian_kernel`. Removes background. Lower values remove more background fragments. <br><br><img src="./figures/highSigm.png" style="width:350px; height:auto;"> | `[20, 70]` |
 | **`thresh`** | Intensity threshold for the bandpass filter. Pixels above this value are considered potential objects. | `[0.003, 0.05]` |
-| **`FalsePositBrightness_k`** | Brightness coefficient `k`. Objects with mean fluorescence < `k * average_image_fluorescence` are removed. | `[1.0, 2.5]` |
+| **`FalsePositBrightness_k`** | Brightness coefficient `k`. Objects with mean fluorescence < `k * average_image_fluorescence` are removed. <br><br><img src="./figures/FalsePositBrightness_k.png" style="width:550px; height:auto;"> | `[1.0, 2.5]` |
 | **`MinNucleusArea`** | Minimum area (in pixels). Objects smaller than this are discarded. | `[500, 1500]` |
 
 ### Scaling Parameters for Different Magnifications/Resolutions
