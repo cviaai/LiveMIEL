@@ -87,4 +87,20 @@ The parameters `lowSigm`, `highSigm`, and `MinNucleusArea` **scale linearly** wi
 - Start with the scaled base values and adjust incrementally
 - Use the example images above as visual references for expected outcomes
 
+## **Citing**
+
+If you use this package in your publications or in other work, please cite it as follows:
+   ```bibtex
+   @article{stepanov2024iPSC,
+     title={Tracking induced pluripotent stem cell differentiation with a fluorescent genetically encoded epigenetic probe},
+     author={Stepanov, A. I. and Shuvaeva, A. A. and Putlyaeva, L. V. and Lukyanov, D. K. and Galiakberova, A. A. and Gorbachev, D. A. and Maltsev, D. I. and Pronina, V. and Dylov and D. V. and Terskikh, A. V. and Lukyanov, K. A. and Gurskaya, N. G.},
+     journal={Cellular and Molecular Life Sciences},
+     number = {1},
+     pages = {381},
+     volume = {81},
+     doi = {/10.1007/s00018-024-05359-0},
+     url = {https://link.springer.com/article/10.1007/s00018-024-05359-0}
+     year = {2024}
+   }
+   
 
